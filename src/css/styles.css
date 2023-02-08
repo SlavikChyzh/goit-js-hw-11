@@ -13,3 +13,50 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.search-form {
+  display: flex;
+  background-color: blue;
+  justify-content: center;
+  padding: 10 10;
+}
+
+.search-input {
+  width: 240px;
+  height: 30px;
+  font-size: 14px;
+  outline: none;
+  border: 2px solid lime;
+  border-radius: 15px;
+  padding-left: 10px;
+  margin-right: 10px;
+}
+
+.submit-btn {
+  height: 30px;
+  font-size: 14px;
+  outline: none;
+  border: 2px solid lime;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding: 0 10;
+}
+.gallery {
+  display: flex;
+}
+.gallery__link {
+  display: flex;
+  width: 100px;
+}
+.gallery-item {
+  display: block;
+}
+
+.gallery-item__img {
+  display: block;
+  max-width: 300px;
+  height: auto;
+}
+.info-item {
+  font-size: 10px;
+  font-style: normal;
+}
