@@ -8,7 +8,8 @@ const searchInputEl = document.getElementById('search-input');
 const searchFormEl = document.getElementById('search-form');
 const galleryEl = document.getElementById('gallery');
 const loadMoreBtnEl = document.getElementById('load_more');
-let simpleLightbox = new SimpleLightbox('.gallery a', {
+const simpleLightbox = new SimpleLightbox('.gallery a', {
+  captions: true,
   captionsData: 'alt',
   captionDelay: 500,
 });
