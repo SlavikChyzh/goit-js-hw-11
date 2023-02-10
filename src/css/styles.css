@@ -15,7 +15,7 @@ body {
 }
 .search-form {
   display: flex;
-  background-color: blue;
+  background-color: rgb(123, 123, 142);
   justify-content: center;
   padding: 10 10;
 }
@@ -25,21 +25,27 @@ body {
   height: 30px;
   font-size: 14px;
   outline: none;
-  border: 2px solid lime;
-  border-radius: 15px;
+  border: 2px solid rgb(13, 76, 234);
+  border-radius: 5px;
   padding-left: 10px;
   margin-right: 10px;
 }
 
-.submit-btn {
+.submit-btn,
+.load_more {
   height: 30px;
   font-size: 14px;
   outline: none;
-  border: 2px solid lime;
-  border-radius: 15px;
+  border: 2px solid rgb(13, 76, 234);
+  border-radius: 5px;
   padding-left: 10px;
   padding: 0 10;
 }
+.load_more {
+  display: flex;
+  margin: 10 auto;
+}
+
 .gallery {
   display: flex;
 }
