@@ -12,17 +12,18 @@ function createMarkUp(arr, gallery) {
     } = el;
     acc += `
       <div class="gallery-item" id="${id}">
-        <a class="gallery__link col" href="${largeImageURL}">
+        <a class="gallery__link" href="${largeImageURL}">
           <img class="gallery-item__img" src="${webformatURL}" alt="${tags}" loading="lazy" />
         </a>
-      <div class="info row row-cols-4">
-        <p class="info-item col"><b>Likes</b>${likes}</p>
-        <p class="info-item col"><b>Views</b>${views}</p>
-        <p class="info-item col"><b>Comments</b>${comments}</p>
-        <p class="info-item col"><b>Downloads</b>${downloads}</p>
+        <div class="info">
+          <p class="info-item"><b>Likes</b>${likes}</p>
+          <p class="info-item"><b>Views</b>${views}</p>
+          <p class="info-item"><b>Comments</b>${comments}</p>
+          <p class="info-item"><b>Downloads</b>${downloads}</p>
+        </div>
       </div>
-    </div>
     `;
+
     return acc;
   }, '');
   gallery.insertAdjacentHTML('beforeend', markUp);
